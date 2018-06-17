@@ -15,3 +15,8 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
       * SimpleCopy
 * Server Side:
   1.  Database : [jsonstore.io](https://jsonstore.io)
+
+
+### Licence : MIT
+
+#### Please Contribute 😊
