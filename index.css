@@ -2,10 +2,6 @@
     margin-top: 50px;
 } */
 
-.box-main  input{
-    vertical-align: text-top;
-}
-
-.box-main .btn {
+.box-main  input, .box-main .btn {
     vertical-align: text-top;
 }
