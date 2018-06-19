@@ -17,7 +17,7 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
   1.  Database : [jsonstore.io](https://jsonstore.io)
 
 ### ⚠ Warning 
-Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues of an individual or a company or an organisation.
+Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
 
 ### Licence : MIT
 
