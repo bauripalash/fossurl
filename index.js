@@ -31,9 +31,9 @@ function geturl(){
 $("#sbtn").click(shorten);
 // document.getElementById("sbtn").onclick = shorten;
 function shorten() {
-    urlb = geturl();
+    fixedurl = geturl();
     genran();
-    short_url(urlb);
+    short_url(fixedurl);
     console.log("shorten");
 
 }
