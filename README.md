@@ -19,6 +19,8 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 ### ⚠ Warning 
 Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
 
-### Licence : MIT
+#### Licence : MIT
 
 #### Please Contribute 😊
+
+### If You Like My Work Consider ☕[BuyMeACoffee](https://buymeacoff.ee/papash) or [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/E1E4GIC7), so I can a domain for me.
