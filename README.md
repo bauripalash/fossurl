@@ -27,4 +27,4 @@ Please Don't Use FossUrl to shorten any sensitive Information , important files 
 
  [![Donate on BuyMeACoffee](https://fsgh.palash.tk/imgs/bmc.gif)](https://buymeacoff.ee/palash)
 
- [![Donate on ko-fi](https://www.fsgh.palash.tk/imgs/kofi.png)](https://ko-fi.com/E1E4GIC7)
+ [![Donate on ko-fi](https://fsgh.palash.tk/imgs/kofi.png)](https://ko-fi.com/E1E4GIC7)
