@@ -25,6 +25,6 @@ Please Don't Use FossUrl to shorten any sensitive Information , important files 
 
 ### If You Like My Work Consider These
 
- [![BuyMeACoffee](https://fsgh.palash.tk/imgs/bmc.gif)](https://buymeacoff.ee/papash)
+ [![BuyMeACoffee](https://fsgh.palash.tk/imgs/bmc.gif)](https://buymeacoff.ee/palash)
 
  [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/E1E4GIC7)
