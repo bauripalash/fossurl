@@ -23,4 +23,8 @@ Please Don't Use FossUrl to shorten any sensitive Information , important files 
 
 #### Please Contribute 😊
 
-### If You Like My Work Consider ☕[BuyMeACoffee](https://buymeacoff.ee/papash) or [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/E1E4GIC7), so I can a domain for me.
+### If You Like My Work Consider These
+
+ [![BuyMeACoffee](https://fsgh.palash.tk/imgs/bmc.gif)](https://buymeacoff.ee/papash)
+
+ [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/E1E4GIC7)
