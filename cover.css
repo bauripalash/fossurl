@@ -27,8 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: linear-gradient(
-#485563, #29323c);
+  background-color: linear-gradient(to right,#485563, #29323c);
 }
 body {
   color: #fff;
