@@ -1,68 +1,9 @@
-var urldb = "https://www.jsonstore.io/79a85a647a95f875559fd3683f975e61b120279d8dcfd0e7e73e764979b3332e";
-// var urllist = "https://www.jsonstore.io/634de8a8aa3d48c3074c5a01ec605368cd11248502306ee7a4916ad67d2222b0";
+var endpoint = "https://www.jsonstore.io/79a85a647a95f875559fd3683f975e61b120279d8dcfd0e7e73e764979b3332e"; //production
+// var endpoint = "https://www.jsonstore.io/555c7f37bd06ffbffa45384535655a49ff6d320dc9f3966f54e5e1e3a09f0b27"; //for experiments on development
 
-function genran() {
-
-    if (window.location.hash == "") {
-        window.location.hash = Math.random().toString(32).substring(2, 5) + Math.random().toString(36).substring(2, 5);
-        // $.getJSON(urllist + "/" + window.location.hash, function(data){
-        //     data = data["result"];
-        //     if(data!=null){
-        //         window.location.hash =Math.random().toString(32).substring(2, 5) + Math.random().toString(36).substring(2, 5);
-        //     }
-
-        // });
-
-    }
-
-}
-
-function geturl(){
-    var urlb = document.getElementById("urlbox").value;
-    var protocol_ok = urlb.startsWith("http://") || urlb.startsWith("https://") || urlb.startsWith("ftp://");
-    if(!protocol_ok){
-        url = "http://"+urlb;
-        return url;
-    }else{
-        return urlb;
-    }
-}
-
-$("#sbtn").click(shorten);
-// document.getElementById("sbtn").onclick = shorten;
-function shorten() {
-    fixedurl = geturl();
-    genran();
-    short_url(fixedurl);
-    console.log("shorten");
-
-}
-
-function short_url(url) {
-    this.url = url;
-    $.ajax({
-        'url': urldb + "/" + window.location.hash.substr(1),
-        'type': 'POST',
-        'data': JSON.stringify(this.url),
-        'dataType': 'json',
-        'contentType': 'application/json; charset=utf-8'
-    })
-
-    //   $.ajax({
-    //     'url': urllist + "/" + "urllist997695",
-    //     'type': 'PUT',
-    //     'data': JSON.stringify(this.url),
-    //     'dataType': 'json',
-    //     'contentType': 'application/json; charset=utf-8'
-    //   })
-    // console.log("short_url");
-    simplecopy(window.location.href);
-}
-var hashh = window.location.hash.substr(1)
-
-
+var hashh = window.location.hash.substr(1);
 if (window.location.hash != "") {
-    $.getJSON(urldb + "/" + hashh, function (data) {
+    $.getJSON(endpoint + "/" + hashh, function (data) {
         data = data["result"];
 
         if (data != null) {
@@ -72,3 +13,62 @@ if (window.location.hash != "") {
     });
 }
 
+$("#sbtn").click(shorturl);
+
+function geturl(){
+    var url = document.getElementById("urlinput").value;
+    var protocol_ok = url.startsWith("http://") || url.startsWith("https://") || url.startsWith("ftp://");
+    if(!protocol_ok){
+        newurl = "http://"+url;
+        return newurl;
+        }else{
+            return url;
+        }
+}
+
+function getrandom() {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for (var i = 0; i < 5; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    return text;
+}
+
+function genhash(){
+    window.location.hash = getrandom();
+    check_is_unique();
+}
+
+function check_is_unique(){
+    url = window.location.hash.substr(1);
+    console.log('URL CHECK ' + url);
+    $.getJSON(endpoint + "/" + url, function (data) {
+        data = data["result"];
+
+        if (data != null) {
+            genhash();
+            console.log("Already Used Address");
+        }
+
+    });
+
+}
+
+function send_request(url) {
+    this.url = url;
+    $.ajax({
+        'url': endpoint + "/" + window.location.hash.substr(1),
+        'type': 'POST',
+        'data': JSON.stringify(this.url),
+        'dataType': 'json',
+        'contentType': 'application/json; charset=utf-8'
+});
+simplecopy(window.location.href);
+}
+
+function shorturl(){
+    var longurl = geturl();
+    genhash();
+    send_request(longurl);
+}
