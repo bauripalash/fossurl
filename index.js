@@ -15,9 +15,9 @@ if (window.location.hash != "") {
 
 $("#sbtn").click(shorturl);
 
-function hideerror(){
-    document.getElementById("erbox").innerHTML = "";
-}
+// function hideerror(){
+//     document.getElementById("erbox").innerHTML = "";
+// }
 
 function geturl(){
     var url = document.getElementById("urlinput").value;
