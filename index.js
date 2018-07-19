@@ -1,5 +1,5 @@
-var endpoint = "https://www.jsonstore.io/79a85a647a95f875559fd3683f975e61b120279d8dcfd0e7e73e764979b3332e"; //production
-// var endpoint = "https://www.jsonstore.io/555c7f37bd06ffbffa45384535655a49ff6d320dc9f3966f54e5e1e3a09f0b27"; //for experiments on development
+// var endpoint = "https://www.jsonstore.io/79a85a647a95f875559fd3683f975e61b120279d8dcfd0e7e73e764979b3332e"; //production
+var endpoint = "https://www.jsonstore.io/555c7f37bd06ffbffa45384535655a49ff6d320dc9f3966f54e5e1e3a09f0b27"; //for experiments on development
 
 var hashh = window.location.hash.substr(1);
 if (window.location.hash != "") {
@@ -14,6 +14,10 @@ if (window.location.hash != "") {
 }
 
 $("#sbtn").click(shorturl);
+
+function hideerror(){
+    document.getElementById("erbox").innerHTML = "";
+}
 
 function geturl(){
     var url = document.getElementById("urlinput").value;
@@ -36,9 +40,38 @@ function getrandom() {
 }
 
 function genhash(){
+    // var cinput = document.getElementById("custominput");
+    // if( cinput.value ){
+        
+    //     if(check_custom_unique(cinput.value)){
+    //         window.location.hash = cinput.value;
+    //     }
+        
+    // }else{
     window.location.hash = getrandom();
     check_is_unique();
+    // }
 }
+
+// function check_custom_unique(cu){
+//     // url = window.location.hash.substr(1);
+//     console.log('Cu URL CHECK ' + cu);
+//     $.getJSON(endpoint + "/" + cu, function (data) {
+//         data = data["result"];
+
+//         if (data != null) {
+//             console.log("Already Used Custom Address");
+//             document.getElementById("custominput").value = "";
+
+//             document.getElementById("erbox").innerHTML = "Custom Already Used, Choose Another";
+//             return false;
+            
+//         }
+
+//     });
+    
+
+// }
 
 function check_is_unique(){
     url = window.location.hash.substr(1);
