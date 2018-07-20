@@ -3,6 +3,8 @@
 
 ## [ >Working Demo<](https://fossurl.palash.tk)
 
+#### Current Version : 2.0 beta
+
 ## 🎯 Goal Of This Project
 Implementing a Simple URL Shortner which can be used without need of any hardcore server side processing and **can be hosted on Static Site Hostings like GitHub/Gitlab Pages**
 
@@ -18,7 +20,7 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 
 ## TODOs:
 
-* Add Custom URL Supoort [Work in Progress]
+* Add Custom URL Supoort [BETA]
 
 ### ⚠ Warning 
 Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
@@ -32,3 +34,9 @@ Please Don't Use FossUrl to shorten any sensitive Information , important files 
  [![Donate on BuyMeACoffee](https://fsgh.palash.tk/imgs/bmc.gif)](https://buymeacoff.ee/palash)
 
  [![Donate on ko-fi](https://fsgh.palash.tk/imgs/kofi.png)](https://ko-fi.com/E1E4GIC7)
+
+## Change Log:
+
+#### > Version 2.0 beta:
+* added custom url support
+* changed background to gradient
