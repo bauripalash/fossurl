@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FossURL - Your Own Url Shortner</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="w3.css" /> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="cover.css" />
- 
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>FossURL 2.0 Beta - Your Own URL Shortener</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="w3.css" /> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="cover.css" />
+
 </head>
+
 <body>
 
-        <div class="site-wrapper">
-    
-          <div class="site-wrapper-inner">
-    
-            <div class="cover-container">
-    
-              <div class="masthead clearfix">
-                <div class="inner">
-                  <h3 class="masthead-brand">FossURL</h3>
-                  <nav class="nav nav-masthead">
-                    <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="https://github.com/bauripalash/fossurl/">GitHub</a>
-                    <a class="nav-link" href="https://github.com/bauripalash/fossurl/issues/new">Report Issue</a>
-                  </nav>
-                </div>
-              </div>
-    
-              <div class="inner cover">
-                <!-- <h1 class="cover-heading">OpenURL</h1> -->
-                
-                <div class="lead">
-                        <div class="box-main">
-                            <input type="url" id="urlinput">
-                            <button id="sbtn" type="button" class="btn btn-dark">Shorten Me</button>
-                        </div>
-                </div>
-                <br>
-                <!-- <div>
-                  <input style="height:10px;font-size:10pt;" type="text" maxlength=20 id="custominput" placeholder="Custom URL" oninput="hideerror()">
-                  <p id="erbox" style="color:red;"></p>
-                </div> -->
-                <br>
-                <small>
-                  Enter the long url in the box -> click the button -> short link will be copied automatically -> share
-                </small>
-              </div>
-              <br>
-             
-    
-              <div class="mastfoot">
-                  
-                      <small style="color:grey;">Please Don't Use FossUrl to shorten any sensitive information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.</small>
-    
-                <div class="inner">
-                  <p>Made with ❤ by <a href="https://palash.tk">Palash Bauri</a></p>
-                </div>
-              </div>
-    
-            </div>
-    
-          </div>
-    
-        </div>
-        <script src="simplecopy.min.js"></script>
-        <script src="jquery.min.js"></script>
-        <script src="index.js"></script>
+  <div class="site-wrapper">
 
-      </body>
+    <div class="site-wrapper-inner">
+
+      <div class="cover-container">
+
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">FossURL</h3>
+            <nav class="nav nav-masthead">
+              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="https://github.com/bauripalash/fossurl/">GitHub</a>
+              <a class="nav-link" href="https://github.com/bauripalash/fossurl/issues/new">Report Issue</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="inner cover">
+          <!-- <h1 class="cover-heading">OpenURL</h1> -->
+
+          <div class="lead">
+            <div class="box-main">
+              <input type="url" id="urlinput">
+              <button id="sbtn" type="button" class="btn btn-dark">Shorten Me</button>
+            </div>
+          </div>
+          <br>
+          <div>
+            <input style="height:10px;font-size:10pt;" type="text" maxlength=20 id="custominput" placeholder="Custom URL" oninput="cinp()">
+            <p id="erbox" style="color:red;"></p>
+          </div>
+          <br>
+          <small>
+            Enter the long url in the box -> click the button -> short link will be copied automatically -> share
+          </small>
+        </div>
+        <br>
+
+
+        <div class="mastfoot">
+
+          <small style="color:grey;">Please Don't Use FossUrl to shorten any sensitive information , important files or any other sensitive things which
+            can create privacy issues for an individual or a company or an organisation.</small>
+
+          <div class="inner">
+            <p>Made with ❤ by
+              <a href="https://palash.tk">Palash Bauri</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <script src="simplecopy.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
 
 </html>

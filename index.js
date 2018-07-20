@@ -15,9 +15,33 @@ if (window.location.hash != "") {
 
 $("#sbtn").click(shorturl);
 
-// function hideerror(){
-//     document.getElementById("erbox").innerHTML = "";
-// }
+function cinp(){
+    document.getElementById("erbox").innerHTML = "";
+    var cival = document.getElementById("custominput").value;
+
+    $.getJSON(endpoint + "/" + cival, function (data) {
+                data = data["result"];
+        
+                if (data != null) {
+                    console.log("Already Used Custom Address");
+                    document.getElementById("erbox").style.color = "red";
+                    document.getElementById("erbox").innerHTML = "❌ Custom Address Already Used, Choose Another";
+                    document.getElementById("custominput").placeholder = document.getElementById("custominput").value;
+                    document.getElementById("custominput").value = "";
+                    
+                    return false;
+                    
+                }else if(data==null){
+                    console.log("Available Custom Address");
+                    document.getElementById("erbox").style.color = "green";
+                    document.getElementById("erbox").innerHTML = " Custom Address Available ✔️";
+                    return true;
+
+                }
+        
+    });
+
+}
 
 function geturl(){
     var url = document.getElementById("urlinput").value;
@@ -40,38 +64,14 @@ function getrandom() {
 }
 
 function genhash(){
-    // var cinput = document.getElementById("custominput");
-    // if( cinput.value ){
-        
-    //     if(check_custom_unique(cinput.value)){
-    //         window.location.hash = cinput.value;
-    //     }
-        
-    // }else{
-    window.location.hash = getrandom();
-    check_is_unique();
-    // }
-}
-
-// function check_custom_unique(cu){
-//     // url = window.location.hash.substr(1);
-//     console.log('Cu URL CHECK ' + cu);
-//     $.getJSON(endpoint + "/" + cu, function (data) {
-//         data = data["result"];
-
-//         if (data != null) {
-//             console.log("Already Used Custom Address");
-//             document.getElementById("custominput").value = "";
-
-//             document.getElementById("erbox").innerHTML = "Custom Already Used, Choose Another";
-//             return false;
+        if (document.getElementById("custominput").value == ""){
+            window.location.hash = getrandom();
+            check_is_unique();
+        }else{
+        window.location.hash = document.getElementById("custominput").value;
             
-//         }
-
-//     });
-    
-
-// }
+        }
+}
 
 function check_is_unique(){
     url = window.location.hash.substr(1);
