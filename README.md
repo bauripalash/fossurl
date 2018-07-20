@@ -35,6 +35,13 @@ Please Don't Use FossUrl to shorten any sensitive Information , important files 
 
  [![Donate on ko-fi](https://fsgh.palash.tk/imgs/kofi.png)](https://ko-fi.com/E1E4GIC7)
 
+## Sponsor : 
+[![BrowserStack](https://images.techhive.com/images/article/2014/12/browserstack-logo-100538202-medium.idge.png)](https://browserstack.com)
+
+> With help of BrowserStack we test our compatability on every platforms.
+
+---
+
 ## Change Log:
 
 #### > Version 2.0 beta:
