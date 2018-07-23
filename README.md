@@ -1,7 +1,8 @@
 # ![FossURL 🔗](static/fossurl-logo-small.png)
 > An Easy to Use URL Shortner Without Needing a User to setup a fancy Server with PHP or NodeJs to work.
 
-## [ >Working Demo<](https://fossurl.palash.tk)
+## [ >Working Demo<](https://fossurl.ml)
+> our old domain `fossurl.palash.tk` is no longer used , instead we use `fossurl.ml`
 
 #### Current Version : 2.0 beta
 
