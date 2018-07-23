@@ -1,4 +1,4 @@
-# FossURL 🔗
+# ![FossURL 🔗](static/fossurl-logo-small.png)
 > An Easy to Use URL Shortner Without Needing a User to setup a fancy Server with PHP or NodeJs to work.
 
 ## [ >Working Demo<](https://fossurl.palash.tk)
@@ -27,7 +27,12 @@ Please Don't Use FossUrl to shorten any sensitive Information , important files 
 
 #### Licence : MIT
 
+#### Logo License : [![Creative Commons Attribution-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+
+
 #### Please Contribute 😊
+
+---
 
 ### If You Like My Work Consider These
 
