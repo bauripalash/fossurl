@@ -98,6 +98,7 @@ function send_request(url) {
         'contentType': 'application/json; charset=utf-8'
 });
 simplecopy(window.location.href);
+document.getElementById('shortenedURL').value = window.location.href
 }
 
 function shorturl(){
