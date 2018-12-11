@@ -1,0 +1,32 @@
+{
+  "name": "fossurl",
+  "version": "2.0.0",
+  "description": "Your Own URL Shortener which can be even hosted in Github and Gitlab Pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bauripalash/fossurl.git"
+  },
+  "keywords": [
+    "url",
+    "url-shortener",
+    "free"
+  ],
+  "author": "Palash Bauri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bauripalash/fossurl/issues"
+  },
+  "homepage": "https://github.com/bauripalash/fossurl#readme",
+  "dependencies": {
+    "cssnano": "^4.1.7",
+    "gulp": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-uglify": "^3.0.1",
+    "pump": "^3.0.0"
+  }
+}
