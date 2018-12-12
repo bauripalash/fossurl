@@ -4,7 +4,8 @@
   "description": "Your Own URL Shortener which can be even hosted in Github and Gitlab Pages",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build",
+    "packit": "gulp packit"
   },
   "repository": {
     "type": "git",
@@ -22,11 +23,15 @@
   },
   "homepage": "https://github.com/bauripalash/fossurl#readme",
   "dependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
     "cssnano": "^4.1.7",
+    "del": "^3.0.0",
     "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-postcss": "^8.0.0",
     "gulp-uglify": "^3.0.1",
-    "pump": "^3.0.0"
+    "gulp-zip": "^4.2.0"
   }
 }
