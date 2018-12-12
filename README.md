@@ -1,5 +1,5 @@
 <div align="center">
-![](static/fossurl-logo-small.png)
+<img src="https://raw.githubusercontent.com/bauripalash/fossurl/master/static/fossurl-logo-small.png">
 </div>
 
 > Your Own URL Shortener which can even be hosted on GitHub/GitLab Pages or any Static Site Hosting Service. No Need of any Costly Server
