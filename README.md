@@ -4,6 +4,9 @@
 
 > Your Own URL Shortener which can even be hosted on GitHub/GitLab Pages or any Static Site Hosting Service. No Need of any Costly Server
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
+
 ## [ >Working Demo<](https://fossurl.ml)
 
 #### Current Version : 2.0
