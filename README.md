@@ -25,7 +25,7 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 
 ## TODOs:
 
-* [] Themes
+* [ ] Themes
 
 ### ⚠ Warning 
 Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
