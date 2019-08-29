@@ -9,6 +9,8 @@
 
 ## [ >Working Demo<](https://fossurl.ml)
 
+## ⚠️ Warning - FossURL is not cuurrently working due to some changes in jsonstore api! hoping to fix fossurl soon!
+
 #### Current Version : 2.0
 
 ## 🎯 Goal Of This Project
