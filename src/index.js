@@ -1,7 +1,11 @@
-let pushJSON = (url, data) => {
+let pushJSON = (address, longurl , shorturl) => {
     let request = new XMLHttpRequest();
-    request.open('POST', url);
+    request.open('POST', address);
     request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+    let data = {
+        "l" : longurl,
+        "s" : shorturl
+    };
     request.send(JSON.stringify(data));
 };
 
@@ -9,8 +13,8 @@ let cinp = () => {
     document.getElementById("erbox").innerHTML = "";
     let cival = document.getElementById("custominput").value;
 
-    let res = JSON.parse(fetchJSON(endpoint + '/' + cival));
-    let data = res.result;
+    let res = JSON.parse(fetchJSON(endpoint + '/?q=s:' + cival))[0]["l"];
+    let data = res;
 
 
     if (data != null) {
@@ -51,7 +55,7 @@ let genhash = () => {
 
 let check_is_unique = () => {
     let url = window.location.hash.substr(1);
-    let res = JSON.parse(fetchJSON(endpoint + '/' + url));
+    let res = JSON.parse(fetchJSON(endpoint + '/?q=s:' + url))[0]["l"];
     let data = res.result;
 
     if (data != null) {
@@ -89,10 +93,11 @@ let copyer = (containerid) => {
 };
 
 let send_request = (url) => {
-    let myurl = url;
-    let address = endpoint + "/" + window.location.hash.substr(1);
+    let longurl = url;
+    let shorturl = window.location.hash.substr(1)
+    let address = endpoint + "/";
     // console.log(address)
-    pushJSON(address, myurl);
+    pushJSON(address, longurl , shorturl);
 
     document.getElementById('shortenedURL').value = window.location.href;
     document.getElementById('sucess').innerHTML = "Short URL Copied to Clipboard!";
