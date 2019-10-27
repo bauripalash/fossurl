@@ -40,7 +40,7 @@ Please Don't Use FossUrl to shorten any sensitive Information , important files 
 
 ### If You Like My Work Consider These
 
- [![Donate on BuyMeACoffee](https://fsgh.palash.tk/imgs/bmc.gif)](https://buymeacoff.ee/palash)
+ [![Donate on Paypal](https://www.paypalobjects.com/webstatic/en_US/i/buttons/pp-acceptance-medium.png)](https://www.paypal.me/bauripalash)
 
 
 ## Sponsor : 
