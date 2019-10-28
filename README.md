@@ -15,14 +15,17 @@ Fossurl is an simple URL Shortener Which Can Be Hosted For Free in Github/Gitlab
 Implementing a Simple URL Shortner which can be used without need of any hardcore server side processing and **can be hosted on Static Site Hostings such as GitHub/Gitlab Pages**
 
 ### 💻 Stack
-* Client Side :
-  1. HTML
-  2. CSS
-  3. JavaScript
+* HTML
+* CSS
+* JavaScript
+* Database : [jsonbox.io](https://jsonbox.io)
+(Previously , jsonstore was used but several downtimes forced me to switch to jsonbox)
 
-* Server Side:
-  1.  Database : [jsonbox.io](https://jsonbox.io)
-> Previously , jsonstore was used but several downtimes forced me to switch to jsonbox
+### 🛠️ Features
+* It's fast
+* It doesn't require any hosting server
+* You can use it just by forking the repo and running a script
+
 
 ## 👻 Wanna Help Improve It?
 #### Steps:

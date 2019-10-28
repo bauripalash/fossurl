@@ -59,6 +59,10 @@ function clean(){
     return del(["./comp"]);
 }
 
+function pack_clean(){
+    return del(["./output/CNAME" , "./output/head.js" , "./output/index.css" , "./output/index.html" , "./output/index.js" , "./output/runme.py"]);
+}
+
 gulp.task("html", m_html);
 gulp.task("css", m_css);
 gulp.task("js", m_js);
@@ -66,6 +70,7 @@ gulp.task("pre_js", pre_js);
 gulp.task("clean" , clean);
 gulp.task("copy_extras" , copy_extras);
 gulp.task("compress" , compress);
+gulp.task("pack_clean" , pack_clean);
 
 
 gulp.task(
@@ -75,5 +80,5 @@ gulp.task(
 
 gulp.task(
     "packit",
-    gulp.series("build" , "compress")
+    gulp.series("build" , "compress" , "pack_clean")
 );
