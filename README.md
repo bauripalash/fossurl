@@ -1,39 +1,28 @@
-<div align="center">
-<img src="https://raw.githubusercontent.com/bauripalash/fossurl/master/static/fossurl-logo-small.png">
-</div>
+![](./static/banner.png)
 
-> Your Own URL Shortener which can even be hosted on GitHub/GitLab Pages or any Static Site Hosting Service. No Need of any Costly Server
+Your Own URL Shortener Which Can Be Hosted For Free and Doesn't Need Any Server!
+
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
 
-## [ >Working Demo<](https://fossurl.ml)
 
-
-#### Current Version : 2.0
-
-## 🎯 Goal Of This Project
+## 🎯 Goal
 Implementing a Simple URL Shortner which can be used without need of any hardcore server side processing and **can be hosted on Static Site Hostings such as GitHub/Gitlab Pages**
 
-## 💻 Technologies Used
+## 💻 Stack
 * Client Side :
   1. HTML
   2. CSS
   3. JavaScript
 
 * Server Side:
-  1.  Database : [jsonstore.io](https://www.jsonstore.io)
+  1.  Database : [jsonbox.io](https://jsonbox.io)
+> Previously , jsonstore was used but several downtimes forced me to switch to jsonbox
 
-## TODOs:
 
-* [ ] Themes
-
-### ⚠ Warning 
+**⚠ Warning **
 Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
-
-#### Licence : MIT
-
-#### Logo License : [![Creative Commons Attribution-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
 
 ---

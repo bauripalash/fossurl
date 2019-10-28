@@ -1,0 +1,1 @@
+var endpoint = "https://jsonbox.io/fossurl_81332516_c847_4864_939b_da25d3fa80be";function fetchJSON(a){var e=new XMLHttpRequest;e.open("GET",a,false);e.send(null);return e.responseText}var hashh=window.location.hash.substr(1);if(window.location.hash!=""){var res=JSON.parse(fetchJSON(endpoint+"/"+hashh));var data=res.result;if(data!=null){window.location.href=data}}
