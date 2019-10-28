@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  margin: auto;
+  text-align: center;
+  background: #333;
+  color:lightblue;
+}
+h1,
+.h1 {
+  color: orange;
+}
+a {
+  color:orange;
+  text-decoration: none
+}
+.h1 a:hover{
+color:orange;
+}
+a:hover{
+ color: aqua;
+}
+.h1
+.h1 a:visited {
+  color: orange;
+  text-decoration: none
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+form,
+.form {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #333;
+  border: 0.5px solid lightblue;
+  box-shadow:2px 2px 4px 2px #222121;
+  display: inline-block;
+  width: 98%;
+  max-width: 380px;
+}
+
+.main {
+  margin-bottom: 25px;
+  padding: 0px 10px 5px 10px;
+  margin: 8px auto 8px;
+  border: 2px solid lightblue;
+  box-shadow:4px 4px 8px 4px #222121;
+  width: 95%;
+  max-width: 600px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+background-color: inherit;
+}
+
+button {
+  font-size: 20px;
+  border-radius: 5px;
+  color: #0e2877;
+  border: 0px solid grey;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightseagreen;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  color:cadetblue;
+}
+
+.small-text {
+  font-size: smaller;
+}
+.heart{
+  color:indianred;
+}
