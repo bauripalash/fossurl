@@ -1,63 +1,54 @@
-<div align="center">
-<img src="https://raw.githubusercontent.com/bauripalash/fossurl/master/static/fossurl-logo-small.png">
-</div>
+![](./static/banner_2.png)
 
-> Your Own URL Shortener which can even be hosted on GitHub/GitLab Pages or any Static Site Hosting Service. No Need of any Costly Server
+[![.](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![.](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
-
-## [ >Working Demo<](https://fossurl.ml)
+#### [🌐 Open fossurl.ml](https://fossurl.ml)
 
 
-#### Current Version : 2.0
+### What is Fossurl
 
-## 🎯 Goal Of This Project
+Fossurl is an simple URL Shortener Which Can Be Hosted For Free in Github/Gitlab Pages or in Static Site Hosting Service and It doesn't need you to buy any server!
+
+
+### 🎯 Goal
 Implementing a Simple URL Shortner which can be used without need of any hardcore server side processing and **can be hosted on Static Site Hostings such as GitHub/Gitlab Pages**
 
-## 💻 Technologies Used
-* Client Side :
-  1. HTML
-  2. CSS
-  3. JavaScript
+### 💻 Stack
+* HTML
+* CSS
+* JavaScript
+* Database : [jsonbox.io](https://jsonbox.io)
+(Previously , jsonstore was used but several downtimes forced me to switch to jsonbox)
 
-* Server Side:
-  1.  Database : [jsonstore.io](https://www.jsonstore.io)
+### 🛠️ Features
+* It's fast
+* It doesn't require any hosting server
+* You can use it just by forking the repo and running a script
 
-## TODOs:
 
-* [ ] Themes
-
-### ⚠ Warning 
-Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
-
-#### Licence : MIT
-
-#### Logo License : [![Creative Commons Attribution-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+## 👻 Wanna Help Improve It?
+#### Steps:
+* Fork This Repo
+* Clone On Your Device or [**Open in Gitpod**](https://gitpod.io/#https://github.com/bauripalash/fossurl)
+* On Linux `cd` to `src` direcotory and on Windows do whatever it's neccesary to change directory to `src`
+* If you're on Linux and have python 3 installed type this command `python -m http.server`
+* Make Changes and improvements
+* After Making Improvements , send a Pull Request
+#### Issues:
+* Create Issues if you find errors or bugs
+* Create Issues to submit improvement ideas
 
 
 ---
+* **⚠ Warning : **
+Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
 
-### If You Like My Work Consider These
+* **Donate:**
 
  [![Donate on Paypal](https://www.paypalobjects.com/webstatic/en_US/i/buttons/pp-acceptance-medium.png)](https://www.paypal.me/bauripalash)
 
 
-## Sponsor : 
-[![BrowserStack](https://images.techhive.com/images/article/2014/12/browserstack-logo-100538202-medium.idge.png)](https://browserstack.com)
+* **Sponsor :** 
+[![BrowserStack](./static/browserstack.svg)](https://browserstack.com)
 
-> With help of BrowserStack we test our compatability on every platforms.
-
----
-
-## Change Log:
-
-#### > v2.0 : 
-* New Design
-* Speed Improved
-* Removed Bootstrap and JQuery
-* Rewritten in ES6 and transpiled using Babel for supporting old browsers
-
-#### > v2.0 alpha:
-* Added custom url support
-* Changed background to gradient
