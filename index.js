@@ -1,1 +1,159 @@
-"use strict";var pushJSON=function(e,t,n){var o=new XMLHttpRequest;o.open("POST",e),o.setRequestHeader("Content-Type","application/json; charset=UTF-8");var d={l:t,s:n};o.send(JSON.stringify(d))},cinp=function(){document.getElementById("erbox").innerHTML="";var e=document.getElementById("custominput").value,t=JSON.parse(fetchJSON(endpoint+"/?q=s:"+e))[0].l;return null==t&&(null==t||void 0)},geturl=function(){return document.getElementById("urlinput").value},getrandom=function(){for(var e="",t="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",n=0;n<5;n++)e+=t.charAt(Math.floor(Math.random()*t.length));return e},genhash=function(){""==document.getElementById("custominput").value?(window.location.hash=getrandom(),check_is_unique()):window.location.hash=document.getElementById("custominput").value},check_is_unique=function(){var e=window.location.hash.substr(1);null!=JSON.parse(fetchJSON(endpoint+"/?q=s:"+e))[0].l.result&&genhash()},copyer=function(e){var t=document.getElementById(e);if(document.selection)if("input"===t.nodeName.toLowerCase())document.getElementById(e).select(),document.execCommand("copy");else{var n=document.body.createTextRange();n.moveToElementText(document.getElementById(e)),n.select(),document.execCommand("copy")}else if(window.getSelection)if("input"===t.nodeName.toLowerCase())document.getElementById(e).select(),document.execCommand("copy");else{var o=document.createRange();o.selectNode(document.getElementById(e)),window.getSelection().removeAllRanges(),window.getSelection().addRange(o),document.execCommand("copy")}},send_request=function(e){var t=e,n=window.location.hash.substr(1),o=endpoint+"/";pushJSON(o,t,n),document.getElementById("shortenedURL").value=window.location.href,document.getElementById("sucess").innerHTML="Short URL Copied to Clipboard!",copyer("shortenedURL")},shorturl=function(){var e=geturl();/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/.test(e)?(document.getElementById("erbox").innerHTML="")==document.getElementById("custominput").value?(genhash(),send_request(e)):/^([a-zA-Z0-9 _-]+)$/.test(document.getElementById("custominput").value)?cinp()?(document.getElementById("erbox").style.color="cyan",document.getElementById("erbox").innerHTML=" Custom Address Available ✔️",genhash(),send_request(e)):(document.getElementById("erbox").style.color="red",document.getElementById("erbox").innerHTML="❌ Custom Address Already Used, Choose Another",document.getElementById("custominput").placeholder=document.getElementById("custominput").value,document.getElementById("custominput").value=""):(document.getElementById("erbox").style.color="red",document.getElementById("erbox").innerHTML="Invalid Custom URL! Use only Alphanumerics and underscore!",document.getElementById("custominput").placeholder=document.getElementById("custominput").value,document.getElementById("custominput").value=""):(document.getElementById("erbox").style.color="red",document.getElementById("erbox").innerHTML="❌ Invalid URL")};document.getElementById("sbtn").addEventListener("click",shorturl),console.log("\n\n███████╗ ██████╗ ███████╗███████╗██╗   ██╗██████╗ ██╗     \n██╔════╝██╔═══██╗██╔════╝██╔════╝██║   ██║██╔══██╗██║     \n█████╗  ██║   ██║███████╗███████╗██║   ██║██████╔╝██║     \n██╔══╝  ██║   ██║╚════██║╚════██║██║   ██║██╔══██╗██║     \n██║     ╚██████╔╝███████║███████║╚██████╔╝██║  ██║███████╗\n╚═╝      ╚═════╝ ╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝\n                                                                                                                               \nPLEASE DON'T TYPE ANYTHING BELLOW UNLESS YOU ARE A DEVELOPER!\n\n");
+let pushJSON = (address, longurl, shorturl) => {
+    let request = new XMLHttpRequest();
+    request.open('POST', address);
+    request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+    let data = {
+        "l": longurl,
+        "s": shorturl
+    };
+    request.send(JSON.stringify(data));
+};
+
+let cinp = () => {
+    document.getElementById("erbox").innerHTML = "";
+    let cival = document.getElementById("custominput").value;
+
+    let res = JSON.parse(fetchJSON(endpoint + '/?q=s:' + cival))[0]["l"];
+    let data = res;
+
+
+    if (data != null) {
+        return false;
+
+    } else if (data == null) {
+        return true;
+
+    }
+
+
+};
+
+let geturl = () => {
+    let url = document.getElementById("urlinput").value;
+    return url;
+
+};
+
+let getrandom = () => {
+    let text = "";
+    let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for (let i = 0; i < 5; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    return text;
+};
+
+let genhash = () => {
+    if (document.getElementById("custominput").value == "") {
+        window.location.hash = getrandom();
+        check_is_unique();
+    } else {
+        window.location.hash = document.getElementById("custominput").value;
+
+    }
+};
+
+let check_is_unique = () => {
+    let url = window.location.hash.substr(1);
+    let res = JSON.parse(fetchJSON(endpoint + '/?q=s:' + url))[0];
+    let data = res;
+
+    if (data != null) {
+        genhash();
+    }
+
+
+};
+
+let copyer = (containerid) => {
+    let elt = document.getElementById(containerid);
+    if (document.selection) { // IE
+        if (elt.nodeName.toLowerCase() === "input") {
+            document.getElementById(containerid).select();
+            document.execCommand("copy");
+        } else {
+            let range = document.body.createTextRange();
+            range.moveToElementText(document.getElementById(containerid));
+            range.select();
+            document.execCommand("copy");
+        }
+
+    } else if (window.getSelection) {
+        if (elt.nodeName.toLowerCase() === "input") {
+            document.getElementById(containerid).select();
+            document.execCommand("copy");
+        } else {
+            let range_ = document.createRange();
+            range_.selectNode(document.getElementById(containerid));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range_);
+            document.execCommand("copy");
+        }
+    }
+};
+
+let send_request = (url) => {
+    let longurl = url;
+    let shorturl = window.location.hash.substr(1)
+    let address = endpoint + "/";
+    // console.log(address)
+    pushJSON(address, longurl, shorturl);
+
+    document.getElementById('shortenedURL').value = window.location.href;
+    document.getElementById('sucess').innerHTML = "Short URL Copied to Clipboard!";
+    copyer("shortenedURL");
+};
+
+let shorturl = () => {
+    let longurl = geturl();
+    let re = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/;
+    let cre = /^([a-zA-Z0-9 _-]+)$/;
+    let protocol_ok = re.test(longurl);
+    if (!protocol_ok) {
+        document.getElementById("erbox").style.color = "red";
+        document.getElementById("erbox").innerHTML = "❌ Invalid URL";
+    } else {
+        document.getElementById("erbox").innerHTML = "";
+        if (document.getElementById("custominput").value == "") {
+            genhash();
+            send_request(longurl);
+
+        } else {
+            if (cre.test(document.getElementById("custominput").value)) {
+                if (cinp()) {
+                    document.getElementById("erbox").style.color = "cyan";
+                    document.getElementById("erbox").innerHTML = " Custom Address Available ✔️";
+                    genhash();
+                    send_request(longurl);
+                } else {
+                    document.getElementById("erbox").style.color = "red";
+                    document.getElementById("erbox").innerHTML = "❌ Custom Address Already Used, Choose Another";
+                    document.getElementById("custominput").placeholder = document.getElementById("custominput").value;
+                    document.getElementById("custominput").value = "";
+                }
+            } else {
+                document.getElementById("erbox").style.color = "red";
+                document.getElementById("erbox").innerHTML = "Invalid Custom URL! Use only Alphanumerics and underscore!";
+                document.getElementById("custominput").placeholder = document.getElementById("custominput").value;
+                document.getElementById("custominput").value = "";
+
+            }
+        }
+
+
+    }
+};
+document.getElementById("sbtn").addEventListener("click", shorturl);
+
+console.log(`
+
+███████╗ ██████╗ ███████╗███████╗██╗   ██╗██████╗ ██╗     
+██╔════╝██╔═══██╗██╔════╝██╔════╝██║   ██║██╔══██╗██║     
+█████╗  ██║   ██║███████╗███████╗██║   ██║██████╔╝██║     
+██╔══╝  ██║   ██║╚════██║╚════██║██║   ██║██╔══██╗██║     
+██║     ╚██████╔╝███████║███████║╚██████╔╝██║  ██║███████╗
+╚═╝      ╚═════╝ ╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+                                                                                                                               
+PLEASE DON'T TYPE ANYTHING BELLOW UNLESS YOU ARE A DEVELOPER!
+
+`)
