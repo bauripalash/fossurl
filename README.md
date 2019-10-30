@@ -39,9 +39,13 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 * Create Issues if you find errors or bugs
 * Create Issues to submit improvement ideas
 
+---
+* **Thanks to**
+* [The Noun Project for the dragonfly icon on homepage](https://thenounproject.com/search/?q=dragonfly&i=2415046)
+* [The Noun Project for the dragonfly icon on README](https://thenounproject.com/search/?q=dragonfly&i=1451640) [(Both are Licensed under CC BY 3.0 US)](https://creativecommons.org/licenses/by/3.0/us/)
 
 ---
-* **⚠ Warning : **
+* **⚠ Warning :**
 Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
 
 * **Donate:**

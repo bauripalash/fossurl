@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <script src="head.js"></script>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>FossURL 2.0 - Your Own URL Shortener</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-
-
+    <script src="head.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FossURL 2.0 - Your Own URL Shortener</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Your Own URL Shortener which doesn't need a server">
+    <meta name="author" content="Palash Bauri">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAOVBMVE
+UAAAAPLYYPLYcOLYYPLIYAIncPLIUPLYYNK4UPLIYLJ4UPLYYIIYQPLYYPLoUOLIYPLYYMKYQOLY
+iDrRhTAAAAE3RSTlMA9+h8yQ+bi0y6LtkfyHtdmj5rVQTpXAAAAL5JREFUKM+1kekOxCAIhDt49H
+Brj/d/2JUiUTaN/5akUedrJgNMrWainBPNTekYarkXSNg28EcjmIz8+bG1YrrKGUoggNLDlgSUZA
+5ch3gAch7VgsTr7qETjRTibDBCYYTSIDCcqsQpeL3vgWHY9e0DJ3MrCWXoxXF1S2uV//APZF2atM
+Ww1Rg227zSXm1zZ8u6xOsDZQ5kogOmtTaEWIfQKRPp7WV8Cl2f9lY4XJku2/Z58bKlyeEQ/g29N8
+8vH+wFCYVC0G0AAAAASUVORK5CYII=">
 </head>
 
 <body>
-  <div class="main">
-    <header>
-      <h1 class="h1"><a href="/"> FossURL 👶 </a></h1>
-    </header>
-    <div class="form">
-      <input type="url" id="urlinput" placeholder="Put Your Long URL Here">
-
-      <div>
-        <input type="text" maxlength=20 id="custominput" placeholder="Custom URL">
-        <p id="erbox" style="color:red;"></p>
-      </div>
-
-      <button id="sbtn" type="button" class="btn btn-dark"> 🔗 Shorten Me</button>
+    <div class="main">
+        <header>
+            <h1 class="h1"><a href="/"> fossurl <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAOVBMVE
+UAAAAPLYYPLYcOLYYPLIYAIncPLIUPLYYNK4UPLIYLJ4UPLYYIIYQPLYYPLoUOLIYPLYYMKYQOLY
+iDrRhTAAAAE3RSTlMA9+h8yQ+bi0y6LtkfyHtdmj5rVQTpXAAAAL5JREFUKM+1kekOxCAIhDt49H
+Brj/d/2JUiUTaN/5akUedrJgNMrWainBPNTekYarkXSNg28EcjmIz8+bG1YrrKGUoggNLDlgSUZA
+5ch3gAch7VgsTr7qETjRTibDBCYYTSIDCcqsQpeL3vgWHY9e0DJ3MrCWXoxXF1S2uV//APZF2atM
+Ww1Rg227zSXm1zZ8u6xOsDZQ5kogOmtTaEWIfQKRPp7WV8Cl2f9lY4XJku2/Z58bKlyeEQ/g29N8
+8vH+wFCYVC0G0AAAAASUVORK5CYII="> </a></h1>
+        </header>
+        <div class="form">
+            <input type="url" id="urlinput" placeholder="Put Your Long URL Here">
+            <div>
+                <input type="text" maxlength=20 id="custominput" placeholder="Custom URL">
+                <p id="erbox" style="color:red;"></p>
+            </div>
+            <button id="sbtn" type="button" class="btn btn-dark"> 🔗 Shorten Me</button>
+        </div>
+        <br>
+        <div class="form" style="margin-bottom : 0px !important;">
+            <input type="text" id="shortenedURL" placeholder="Your Short Url Shown here">
+            <p id="sucess" style="color:cyan"></p>
+        </div>
+        <footer class="infos">
+            <p class="small-text" style="color:grey;">Please Don't Shorten Sensitive Information With FossURL! We are not
+                responsible for any damage made using FossURL </p>
+            <a class="small-text" href="https://github.com/bauripalash/fossurl/issues/new"> ⚠️ Report</a>
+            <p><strong> Handcrafted with ❤ by
+                    <a href="https://palash.tk">Palash Bauri</a></strong>
+            </p>
+        </footer>
     </div>
-    <br>
-    <div class="form" style="margin-bottom : 0px !important;">
-      <input type="text" id="shortenedURL" placeholder="Your Short Url Shown here">
-      <p id="sucess" style="color:cyan"></p>
-
-    </div>
-    <footer class="infos">
-      <p class="small-text" style="color:grey;">Please Don't Shorten Sensitive Information With FossURL! We are not
-        responsible for any damage made using FossURL </p>
-      <a class="small-text" href="https://github.com/bauripalash/fossurl/issues/new"> ⚠️ Report</a>
-      <p><strong> Handcrafted with ❤ by
-          <a href="https://palash.tk">Palash Bauri</a></strong>
-      </p>
-    </footer>
-  </div>
-
-  <script src="index.js"></script>
-
+    <script src="index.js"></script>
 </body>
 
 </html>

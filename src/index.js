@@ -1,10 +1,10 @@
-let pushJSON = (address, longurl , shorturl) => {
+let pushJSON = (address, longurl, shorturl) => {
     let request = new XMLHttpRequest();
     request.open('POST', address);
     request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     let data = {
-        "l" : longurl,
-        "s" : shorturl
+        "l": longurl,
+        "s": shorturl
     };
     request.send(JSON.stringify(data));
 };
@@ -55,8 +55,8 @@ let genhash = () => {
 
 let check_is_unique = () => {
     let url = window.location.hash.substr(1);
-    let res = JSON.parse(fetchJSON(endpoint + '/?q=s:' + url))[0]["l"];
-    let data = res.result;
+    let res = JSON.parse(fetchJSON(endpoint + '/?q=s:' + url))[0];
+    let data = res;
 
     if (data != null) {
         genhash();
@@ -97,7 +97,7 @@ let send_request = (url) => {
     let shorturl = window.location.hash.substr(1)
     let address = endpoint + "/";
     // console.log(address)
-    pushJSON(address, longurl , shorturl);
+    pushJSON(address, longurl, shorturl);
 
     document.getElementById('shortenedURL').value = window.location.href;
     document.getElementById('sucess').innerHTML = "Short URL Copied to Clipboard!";
