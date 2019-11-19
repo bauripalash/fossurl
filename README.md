@@ -48,11 +48,10 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 * **⚠ Warning :**
 Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
 
-* **Donate:**
-
- [![Donate on Paypal](https://www.paypalobjects.com/webstatic/en_US/i/buttons/pp-acceptance-medium.png)](https://www.paypal.me/bauripalash)
-
 
 * **Sponsor :** 
 [![BrowserStack](./static/browserstack.svg)](https://browserstack.com)
 
+---
+### Buy Me A Coffee!
+<a href="https://www.buymeacoffee.com/palash" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 80px !important;" ></a>
