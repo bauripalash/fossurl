@@ -1,4 +1,4 @@
-var endpoint = "https://jsonbox.io/box_f4a3d05ef8fe374ac8ea";
+var endpoint = "https://jsonbox.io/box_dcb0deec984b844a29ec";
 
 function fetchJSON(a) {
     var f = new XMLHttpRequest;
