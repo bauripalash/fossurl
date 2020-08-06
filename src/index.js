@@ -12,8 +12,12 @@ let pushJSON = (address, longurl, shorturl) => {
 let cinp = () => {
     document.getElementById("erbox").innerHTML = "";
     let cival = document.getElementById("custominput").value;
-
-    let res = JSON.parse(fetchJSON(endpoint + '/?q=s:' + cival))[0]["l"];
+    
+    let res = JSON.parse(fetchJSON(endpoint + '/?q=s:' + cival))
+    if (res.length === 0){
+        return true;
+    }
+    res = res[0]["l"]
     let data = res;
 
 
