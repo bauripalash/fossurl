@@ -52,6 +52,3 @@ Please Don't Use FossUrl to shorten any sensitive Information , important files 
 * **Sponsor :** 
 [![BrowserStack](./static/browserstack.svg)](https://browserstack.com)
 
----
-### Buy Me A Coffee!
-<a href="https://www.buymeacoffee.com/palash" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 80px !important;" ></a>
