@@ -3,7 +3,7 @@
 [![.](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![.](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
 
-#### [🌐 Open fossurl.ml](https://fossurl.ml)
+#### [🌐 Open fossurl website](https://palashbauri.in/fossurl)
 
 
 ### What is Fossurl
