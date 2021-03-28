@@ -18,8 +18,10 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 * HTML
 * CSS
 * JavaScript
-* Database : [jsonbox.io](https://jsonbox.io)
-(Previously , jsonstore was used but several downtimes forced me to switch to jsonbox)
+* Database : [jsonconnect.com](https://jsonconnect.com/)
+(Previously , jsonstore was used but several downtimes forced me to switch to jsonbox.io, then to jsconnect as jsonbox went offline)
+
+**Please note that your shortened links will be valid for only 30 days, due to [Jsconnect.com limitations](https://jsonconnect.com/)**.
 
 ### 🛠️ Features
 * It's fast
@@ -48,6 +50,7 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 * **⚠ Warning :**
 Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
 
+**Keep in mind that your shortened links will be valid for only 30 days, due to [Jsconnect.com limitations](https://jsonconnect.com/)**.
 
 * **Sponsor :** 
 [![BrowserStack](./static/browserstack.svg)](https://browserstack.com)
