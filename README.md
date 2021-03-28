@@ -21,6 +21,8 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 * Database : [jsonconnect.com](https://jsonconnect.com/)
 (Previously , jsonstore was used but several downtimes forced me to switch to jsonbox.io, then to jsconnect as jsonbox went offline)
 
+Jsconnect.com [is a fork of Jsonbox.io](https://github.com/bauripalash/fossurl/issues/29) - learn more on [the project's homepage](https://github.com/jsonconnect/jsonconnect).
+
 **Please note that your shortened links will be valid for only 30 days, due to [Jsconnect.com limitations](https://jsonconnect.com/)**.
 
 ### 🛠️ Features
@@ -45,12 +47,14 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 * **Thanks to**
 * [The Noun Project for the dragonfly icon on homepage](https://thenounproject.com/search/?q=dragonfly&i=2415046)
 * [The Noun Project for the dragonfly icon on README](https://thenounproject.com/search/?q=dragonfly&i=1451640) [(Both are Licensed under CC BY 3.0 US)](https://creativecommons.org/licenses/by/3.0/us/)
+* [Anthony Arutyunov](https://github.com/AnthonyArutyunov) for hosting Jsconnect.com
 
 ---
 * **⚠ Warning :**
+
 Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
 
-**Keep in mind that your shortened links will be valid for only 30 days, due to [Jsconnect.com limitations](https://jsonconnect.com/)**.
+Keep in mind that your shortened links will be valid for only 30 days, due to [Jsconnect.com limitations](https://jsonconnect.com/).
 
 * **Sponsor :** 
 [![BrowserStack](./static/browserstack.svg)](https://browserstack.com)
