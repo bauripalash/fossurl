@@ -44,17 +44,17 @@ Jsconnect.com [is a fork of Jsonbox.io](https://github.com/bauripalash/fossurl/i
 * Create Issues to submit improvement ideas
 
 ---
-* **Thanks to**
+**Thanks to**
+
 * [The Noun Project for the dragonfly icon on homepage](https://thenounproject.com/search/?q=dragonfly&i=2415046)
 * [The Noun Project for the dragonfly icon on README](https://thenounproject.com/search/?q=dragonfly&i=1451640) [(Both are Licensed under CC BY 3.0 US)](https://creativecommons.org/licenses/by/3.0/us/)
 * [Anthony Arutyunov](https://github.com/AnthonyArutyunov) for hosting Jsconnect.com
 
 ---
-* **⚠ Warning :**
+**⚠ Warning :**
 
-Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
-
-Keep in mind that your shortened links will be valid for only 30 days, due to [Jsconnect.com limitations](https://jsonconnect.com/).
+* Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
+* Keep in mind that your shortened links will be valid for only 30 days, due to [Jsconnect.com limitations](https://jsonconnect.com/).
 
 * **Sponsor :** 
 [![BrowserStack](./static/browserstack.svg)](https://browserstack.com)
