@@ -32,7 +32,9 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 * Fork This Repo
 * Clone On Your Device or [**Open in Gitpod**](https://gitpod.io/#https://github.com/bauripalash/fossurl)
 * On Linux `cd` to `src` directory and on Windows do whatever it's necessary to change directory to `src`
-* If you're on Linux and have python 3 installed type this command `python -m http.server`. If you use python 2, run `python -m SimpleHTTPServer` instead. (You can check your version of Python with the command `python --version`)
+* If you're on Linux, check your version of Python with the command `python --version`.
+  * If you have python 3 installed, type this command; `python -m http.server`.
+  * If you use python 2, run `python -m SimpleHTTPServer` instead.
 * Make Changes and improvements
 * After Making Improvements , send a Pull Request
 
