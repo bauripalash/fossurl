@@ -23,7 +23,6 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 
 Jsconnect.com [is a fork of Jsonbox.io](https://github.com/bauripalash/fossurl/issues/29) - learn more on [the project's homepage](https://github.com/jsonconnect/jsonconnect).
 
-**Please note that your shortened links will be valid for only 30 days, due to [Jsconnect.com limitations](https://jsonconnect.com/)**.
 
 ### 🛠️ Features
 * It's fast
@@ -54,7 +53,6 @@ Jsconnect.com [is a fork of Jsonbox.io](https://github.com/bauripalash/fossurl/i
 **⚠ Warning :**
 
 * Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
-* Keep in mind that your shortened links will be valid for only 30 days, due to [Jsconnect.com limitations](https://jsonconnect.com/).
 
 * **Sponsor :** 
 [![BrowserStack](./static/browserstack.svg)](https://browserstack.com)
