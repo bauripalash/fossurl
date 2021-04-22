@@ -29,6 +29,11 @@ Jsconnect.com [is a fork of Jsonbox.io](https://github.com/bauripalash/fossurl/i
 * It doesn't require any hosting server
 * You can use it just by forking the repo and running a script
 
+### Where is my data stored?
+
+The connection between your shorten URL and the long one is stored by jsonconnect.com, and will be available as long as the server is alive. 
+
+The server is set to [keep the data for 99999 days](https://github.com/jsonconnect/jsonconnect/issues/2#issuecomment-825011113), which is somewhere over 200 years 😎!
 
 ## 👻 Wanna Help Improve It?
 #### Steps:
