@@ -19,9 +19,9 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 * CSS
 * JavaScript
 * Database : [jsonconnect.com](https://jsonconnect.com/)
-(Previously , jsonstore was used but several downtimes forced me to switch to jsonbox.io, then to jsconnect as jsonbox went offline)
+(Previously , jsonstore was used but several downtimes forced me to switch to jsonbox.io, then to jsonconnect as jsonbox went offline)
 
-Jsconnect.com [is a fork of Jsonbox.io](https://github.com/bauripalash/fossurl/issues/29) - learn more on [the project's homepage](https://github.com/jsonconnect/jsonconnect).
+Jsonconnect.com [is a fork of Jsonbox.io](https://github.com/bauripalash/fossurl/issues/29) - learn more on [the project's homepage](https://github.com/jsonconnect/jsonconnect).
 
 
 ### 🛠️ Features
@@ -52,7 +52,7 @@ The server is set to [keep the data for 99999 days](https://github.com/jsonconne
 
 * [The Noun Project for the dragonfly icon on homepage](https://thenounproject.com/search/?q=dragonfly&i=2415046)
 * [The Noun Project for the dragonfly icon on README](https://thenounproject.com/search/?q=dragonfly&i=1451640) [(Both are Licensed under CC BY 3.0 US)](https://creativecommons.org/licenses/by/3.0/us/)
-* [Anthony Arutyunov](https://github.com/AnthonyArutyunov) for hosting Jsconnect.com
+* [Anthony Arutyunov](https://github.com/AnthonyArutyunov) for hosting Jsonconnect.com
 
 ---
 **⚠ Warning :**
