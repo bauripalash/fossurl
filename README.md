@@ -18,14 +18,22 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 * HTML
 * CSS
 * JavaScript
-* Database : [jsonbox.io](https://jsonbox.io)
-(Previously , jsonstore was used but several downtimes forced me to switch to jsonbox)
+* Database : [jsonconnect.com](https://jsonconnect.com/)
+(Previously , jsonstore was used but several downtimes forced me to switch to jsonbox.io, then to jsonconnect as jsonbox went offline)
+
+Jsonconnect.com [is a fork of Jsonbox.io](https://github.com/bauripalash/fossurl/issues/29) - learn more on [the project's homepage](https://github.com/jsonconnect/jsonconnect).
+
 
 ### 🛠️ Features
 * It's fast
 * It doesn't require any hosting server
 * You can use it just by forking the repo and running a script
 
+### Where is my data stored?
+
+The connection between your shorten URL and the long one is stored by jsonconnect.com, and will be available as long as the server is alive. 
+
+The server is set to [keep the data for 99999 days](https://github.com/jsonconnect/jsonconnect/issues/2#issuecomment-825011113), which is somewhere over 200 years 😎!
 
 ## 👻 Wanna Help Improve It?
 #### Steps:
@@ -43,14 +51,16 @@ Implementing a Simple URL Shortner which can be used without need of any hardcor
 * Create Issues to submit improvement ideas
 
 ---
-* **Thanks to**
+**Thanks to**
+
 * [The Noun Project for the dragonfly icon on homepage](https://thenounproject.com/search/?q=dragonfly&i=2415046)
 * [The Noun Project for the dragonfly icon on README](https://thenounproject.com/search/?q=dragonfly&i=1451640) [(Both are Licensed under CC BY 3.0 US)](https://creativecommons.org/licenses/by/3.0/us/)
+* [Anthony Arutyunov](https://github.com/AnthonyArutyunov) for hosting Jsonconnect.com
 
 ---
-* **⚠ Warning :**
-Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
+**⚠ Warning :**
 
+* Please Don't Use FossUrl to shorten any sensitive Information , important files or any other sensitive things which can create privacy issues for an individual or a company or an organisation.
 
 * **Sponsor :** 
 [![BrowserStack](./static/browserstack.svg)](https://browserstack.com)

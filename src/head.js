@@ -1,4 +1,4 @@
-var endpoint = "https://jsonbox.io/box_f4a3d05ef8fe374ac8ea";
+var endpoint = "https://jsonconnect.com/connect_21ad6e588abb4198e45b";
 
 function fetchJSON(a) {
     var f = new XMLHttpRequest;
